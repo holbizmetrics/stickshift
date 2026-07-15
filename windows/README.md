@@ -9,6 +9,17 @@ model, and the same `gearbox.html` — hosted verbatim in WebView2, not forked.
 > control in the gearbox drives the engine — but it has had one evening of live testing on one
 > machine. Treat it as a working spike to build on, not a hardened release. Known issues below.
 
+## Quick start
+
+1. Inside your Claude Code session, give it a findable title: `/rename my claude session`
+2. **Have the .NET 10 SDK?** Double-click `run.cmd` — or `run.cmd --target "my claude session"` to aim it.
+3. **No .NET at all?** Run `publish.cmd` once on any machine that has the SDK: it produces
+   self-contained `stickshift.exe` + `StickShiftGearbox.exe` in `windows/publish/` that run on any
+   Windows 10/11 x64 machine — zip the folder and share it.
+
+Then pull a gear. Without `--target`, the gearbox auto-picks the first Claude session it can read —
+prefer `--target`, it's what keeps you from shifting the wrong session.
+
 ## Layout
 
 | Project | WINDOWS.md step | What it is |
